@@ -348,3 +348,9 @@
 	status = "okay";
 	memory-region = <&gfx_memory>;
 };
+gpiopower {
+    compatible = "aspeed,gpio-power-control";
+    gpios = <&gpio0 ASPEED_GPIO(I, 6) GPIO_ACTIVE_LOW>;
+    status = "okay";
+};
+
